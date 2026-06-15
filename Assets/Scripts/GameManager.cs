@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        if (juegoTerminado && Input.GetKeyDown(KeyCode.R))
+        if (juegoTerminado && Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.R) && Time.timeScale == 0)
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
