@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a9ef81d7563ed61409f029ca891f7d71
+guid: 0bac08337346ccf44ad52a7137064039
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Circle
-    100002: Circle.001
+    100000: Circle.002
+    100002: Circle.003
     100004: Cube.007
     100006: Cube.015
     100008: Cube.017
@@ -28,8 +28,8 @@ ModelImporter:
     100044: Plane.008
     100046: Plane.009
     100048: //RootNode
-    400000: Circle
-    400002: Circle.001
+    400000: Circle.002
+    400002: Circle.003
     400004: Cube.007
     400006: Cube.015
     400008: Cube.017
@@ -53,10 +53,10 @@ ModelImporter:
     400044: Plane.008
     400046: Plane.009
     400048: //RootNode
-    2100000: Rojo
-    2100002: Blanco
-    2100004: Rojo.001
-    2100006: Blanco.001
+    2100000: Rojo.002
+    2100002: Blanco.002
+    2100004: Rojo.003
+    2100006: Blanco.003
     2100008: Negro_Marco_Ventana.010
     2100010: Celeste_ventana.010
     2100012: Negro_Marco_Ventana.006
@@ -217,8 +217,8 @@ ModelImporter:
     2100322: Textura_Cono
     2100324: Textura_Piso_Madera
     2100326: Pared_Ladrillo
-    2300000: Circle
-    2300002: Circle.001
+    2300000: Circle.002
+    2300002: Circle.003
     2300004: Cube.007
     2300006: Cube.015
     2300008: Cube.017
@@ -241,8 +241,8 @@ ModelImporter:
     2300042: Plane.007
     2300044: Plane.008
     2300046: Plane.009
-    3300000: Circle
-    3300002: Circle.001
+    3300000: Circle.002
+    3300002: Circle.003
     3300004: Cube.007
     3300006: Cube.015
     3300008: Cube.017
@@ -265,8 +265,8 @@ ModelImporter:
     3300042: Plane.007
     3300044: Plane.008
     3300046: Plane.009
-    4300000: Circle
-    4300002: Circle.001
+    4300000: Circle.002
+    4300002: Circle.003
     4300004: Cube.007
     4300006: Cube.015
     4300008: Cube.017
@@ -289,8 +289,8 @@ ModelImporter:
     4300042: Plane.007
     4300044: Plane.008
     4300046: Plane.009
-    6400000: Circle
-    6400002: Circle.001
+    6400000: Circle.002
+    6400002: Circle.003
     6400004: Cube.007
     6400006: Cube.015
     6400008: Cube.017
@@ -383,7 +383,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
