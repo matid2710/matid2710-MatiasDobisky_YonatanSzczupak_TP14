@@ -3,31 +3,40 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float timer = 60f;
+    public float timer = 30f;
     private UIManager uiManager;
     private bool juegoTerminado = false;
 
     void Start()
-    {
-        Time.timeScale = 1;
-        uiManager = FindObjectOfType<UIManager>();
-    }
+   {
+    Time.timeScale = 1;
+    uiManager = FindObjectOfType<UIManager>();
+
+    Debug.Log("Timer inicial: " + timer);
+
+    uiManager.UpdateTimer(timer);
+}
 
     void Update()
     {
-        if (timer > 0 && !juegoTerminado)
+        if (!juegoTerminado)
         {
             timer -= Time.deltaTime;
+
+            if (timer < 0)
+                timer = 0;
+
             uiManager.UpdateTimer(timer);
-        }
-        else if (timer <= 0 && !juegoTerminado)
-        {
-            juegoTerminado = true;
-            uiManager.MostrarPantallaGameOver();
-            Time.timeScale = 0;
+
+            if (timer <= 0)
+            {
+                juegoTerminado = true;
+                uiManager.MostrarPantallaGameOver();
+                Time.timeScale = 0;
+            }
         }
 
-        if (juegoTerminado && Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.R) && Time.timeScale == 0)
+        if (Input.GetKeyDown(KeyCode.R) && Time.timeScale == 0)
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

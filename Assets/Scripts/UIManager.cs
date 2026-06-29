@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class UIManager : MonoBehaviour
@@ -16,7 +15,8 @@ public class UIManager : MonoBehaviour
 
     public void UpdateTimer(float timer)
     {
-        timerText.text = "00:" + (int)timer;
+        int segundos = Mathf.CeilToInt(timer);
+        timerText.text = string.Format("{0:00}:{1:00}", 0, segundos);
     }
 
     public void MostrarPantallaWin()
